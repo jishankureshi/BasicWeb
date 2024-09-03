@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png" alt="" class="logo">
+        <ul id="menu-links">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>About us</li>
+        </ul>
+        <button class="nav-btn">Get started <img src="images/arrow-white.png" alt=""></button>
+        <img src="images/menu.png"  class="menu-icon" onclick="toogleMenu()">
+    </nav>
+
+    <div class="header">
+
+        <div class="header-content"> 
+
+        <h1><span>FREE</span><br><span>LANCER</span></h1>
+        <div class="btn-container">
+         <button class="btn-dark">Request Call Back <img src="images/phone.png" alt=""></button>
+         <button class="btn-light">Know More <img src="images/arrow-black.png" alt=""></button>
+
+
+
+        </div>
+
+        <p>Passionate UI/UX designers with 10+ years of experience.</p>
+
+        </div>
+
+        <img src="images/user.png" alt="" class="user-img">
+    </div>
+
+
+
+    <script>
+     let navbar=document.querySelector('nav');
+
+     let menuLinks=document.getElementById("menu-links");
+
+
+     function toogleMenu(){
+        menuLinks.classList.toggle('show-menu');
+     }
+
+     window.onscroll=function(){
+    if(window.scrollY > 0){
+
+        navbar.style.background='#eefff9';
+    }
+    else{
+        navbar.style.background='transparent';
+    }
+}
+    </script>
+
+
+
+
+</body>
+</html>
